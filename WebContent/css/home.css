@@ -1,0 +1,131 @@
+.body {
+	width: 100%;
+	max-width: 700px;
+	margin: auto;
+	align-items: center;
+	font-family: Arial;
+}
+
+.calHead {
+	width: 100%;	
+}
+
+.hamMenu {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-image: url(../images/ham.png);
+	background-position-x: 44px;
+    background-size: 108px 50px;
+    background-position-y: 39px;
+}
+
+.hamMenu:hover {
+	background-position-x: 89px;
+    background-size: 108px 50px;
+    background-position-y: 39px;
+}
+
+.hamMenuBox {
+	width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    z-index: 8;
+    position: absolute;
+    background: rgba(150, 150, 150, .8);
+    display:none;
+}
+.hamMenuItem {
+    width: 90%;
+    padding: 5%;
+    border-bottom: 1px solid #fff;
+    background-color: #ccc;
+}
+
+.hamMenuItem:hover {
+	background-color: #aaa;
+	cursor: pointer;	
+}
+
+.calNavigator span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #ccc;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.calYear, .calMonth {
+	font-size: 30px;
+	display: inline-block;
+}
+
+.calendar {
+	border-left: 3px solid #ccc;
+	border-right: 3px solid #ccc;
+}
+
+.calBody th {
+	background-color: #ccc;
+	border-radius: 4px;
+}
+
+.calDay {
+	width: 96px;
+	height: 96px;
+	position: relative;
+	background-color: #eee;
+	vertical-align: top;
+	padding: 0px;
+	border-radius: 4px;
+}
+
+.calDay:hover {
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.calDate {
+	width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    /* text-shadow: 2px 2px 1px rgba(150, 150, 150, 1); */
+	font-size: 25px;
+    font-weight: bold;
+}
+
+.dateButton {
+	width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    position: absolute;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.dateButton.addExpense {
+	left: 5px;
+	bottom: 5px;
+}
+
+.dateButton.showExpenses {
+	right: 5px;
+	bottom: 5px;
+}
+
+.bgPane {
+	width: 700px;
+	height: 100%;
+	z-index: 9;
+	float: left;
+	background: rgba(200, 200, 200, 0.4);
+	position: absolute;
+	display: none;
+}
