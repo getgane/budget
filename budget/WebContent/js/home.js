@@ -43,7 +43,7 @@ $(document).ready(function() {
 				c = 0;
 			}
 		}
-		$("." + ele).append(calHtml);
+		$("." + ele).html(calHtml);
 		
 		$(".addExpense").click(function() {
 			showAddExpensePopup($(this).parent());
@@ -62,6 +62,7 @@ $(document).ready(function() {
 	var getDateSection = function(date) {
 		var dateHtml = $("<div>",{id: date, class: "calDay"});
 		dateHtml.append($("<div>", {class: "calDate", title: date}).html(date.substr(8)));
+		dateHtml.append($("<div>", {class: "dateButton dayExpense", title: 12000}).html("12000"));
 		dateHtml.append($("<div>", {class: "dateButton addExpense", title: "Add Expense"}).html("+"));
 		dateHtml.append($("<div>", {class: "dateButton showExpenses", title: "Show Today's Expenses"}).html("o"));
 		return dateHtml;
